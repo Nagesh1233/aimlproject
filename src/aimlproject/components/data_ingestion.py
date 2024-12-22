@@ -21,7 +21,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         try:
             #reeding code
-            df=pd.read_csv('notebook\data\StudentsPerformance.csv')
+            df=pd.read_csv(os.path.join('notebook/data','raw.csv'))
             logging.info("Reeding completed from mysql database")
             
             os.makedirs(os.path.dirname(self.ingestion_config.train_data_path),exist_ok=True)

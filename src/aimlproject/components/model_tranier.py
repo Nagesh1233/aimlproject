@@ -18,6 +18,6 @@ from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
 from xgboost import XGBRegressor
 
-from src.mlproject.exception import CustomException
-from src.mlproject.logger import logging
-from src.mlproject.utils import save_object,evaluate_models
+from src.aimlproject.exception import CustomException
+from src.aimlproject.logger import logging
+from src.aimlproject.utils import save_object,evaluate_models
